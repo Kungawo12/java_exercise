@@ -30,10 +30,18 @@ public class Line implements Comparable<Line>{
     public double getStartX(){
         return this.start.getX();
     }
+    public double getStartY(){
+        return this.start.getY();
+    }
     
     public double getEndX(){
         return this.end.getX();
     }
+    
+    public double getEndY(){
+        return this.end.getY();
+    }
+    
 
     public double length(){
         double firstTerm = Math.pow((this.start.getX())- this.end.getX(),2);
