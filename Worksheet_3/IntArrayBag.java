@@ -117,6 +117,16 @@ public class IntArrayBag implements Iterable<Integer>{
         
         }
         return output;
+
+    }
+
+    public int search(int target){
+        for (int i = 0; i < manyItems; i++) {
+            if(data[i] == target){
+                return i;
+            }
+        }
+        return -1;
     }
 
 }
